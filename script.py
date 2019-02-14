@@ -3,6 +3,7 @@ from flask import Flask, request #import main Flask class and request object
 
 app = Flask(__name__) #create the Flask app
 
+#git checkout to 2 changes ago
 
 @app.route('/hello/<name>')
 def json_example(name):
@@ -10,7 +11,3 @@ def json_example(name):
 
     if __name__ == '__main__':
             app.run(debug=True, port=5000) #run app in debug mode on port 5000
-
-@app.route('/ejemplo/ruben')
-def ruben():
-    return jsonify({'message':'new url'})
