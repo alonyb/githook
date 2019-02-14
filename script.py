@@ -10,3 +10,7 @@ def json_example(name):
 
     if __name__ == '__main__':
             app.run(debug=True, port=5000) #run app in debug mode on port 5000
+
+@app.route('/ejemplo/ruben')
+def ruben():
+    return jsonify({'message':'new url'})
